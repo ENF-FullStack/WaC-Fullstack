@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Start-page</title>
+        <meta charset="utf-8" />
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href="/styles/page.css" rel="stylesheet">
+		<script src="/libs/jquery.js"></script>
+		<script src="/scripts/page.js"></script>
+    </head>
+    <body>
+		<div id="topmost" class="container">
+			<header>
+				<img src="images/task-icon.png" />
+				<h1>Web-UI</h1>
+			</header>
+            <main>
+                <nav>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN</a>
+                    <a id="w3s" href="http://www.w3schools.com/html/html5_intro.asp">W3Schools</a>
+                </nav>
+                <article>
+                    <h1>Working with DOM</h1>
+                    <div id="clickContainer">
+                        <p id="click1">We are going to work with events and dom-manipulation using this page.</p>
+                        <p id="click2">Actual instructions are in the script page.js located in the scripts-directory.</p>
+                    </div>
+                    <section>
+                        <h2>Events</h2>
+                        <p id="click3">Event-handlers <b>can</b> be implement in various ways.</p>
+                        <p>Let's work mostly with standard JavaScript. If you feel up to it
+                            you can also experiment with jQuery.</p>
+                    </section>
+                    <section>
+                        <h2 id="styles">Using styles</h2>
+                        <p id="showNext" class="test">In most cases we just change the style for selected item.</p>
+                        <p style="display:none">The above header has id="styles". To change the color to red
+                        you would <pre>el.style.color="red"</pre> or 
+                        <pre>$("#styles").css("color","red");</pre></p>
+                    </section>
+                    <section>
+                        <h2>Dom Manipulation</h2>
+                        <figure>
+                            <figcaption><h2>Pricing</h2></figcaption>
+                            <table class="table">
+                                <thead>
+                                    <tr><th>Item</th><th>Price</th></tr>
+                                </thead>
+                                <tbody id="priceBody">
+                                    <tr><td>Bicycle</td><td>320€</td></tr>
+                                    <tr><td>Scooter</td><td>1200€</td></tr>
+                                    <tr><td>Horse</td><td>4120€</td></tr>
+                                </tbody>
+                            </table>
+                        </figure>
+                        <p id="addRow" class="test">Clicking this should append a new row to the table</p>
+                    </section>
+                </article>
+                <aside>
+                    <section>
+                        <h2>Special sale</h2>
+                        <p>Today only for you....</p>
+                    </section>
+                    <section>
+                        <h2>Two at price of three</h2>
+                        <p>Limited time only....</p>
+                    </section>
+                </aside>
+            </main>
+			<footer>
+				<p>Copyright (c) Kooditutorit Konsultointi Oy</p>
+			</footer>
+		</div>
+	</body>
+</html>

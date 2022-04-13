@@ -1,0 +1,6 @@
+[
+    {"id":1,"title":"Odysseia","author":"Homeros","description":"Long way back","price":12.3,"published_date":"1922-03-03T22:00:00.000Z"},
+    {"id":2,"title":"Hobbit","author":"Tolkien","description":"There and back","price":11.2,"published_date":"1937-02-02T22:00:00.000Z"},
+    {"id":3,"title":"Two towers","author":"Tolkien","description":"Some balls?","price":13.4,"published_date":"1954-10-05T22:00:00.000Z"},
+    {"id":4,"title":"Player piano","author":"Vonnegut","description":"Engineers for-ever","price":14.9,"published_date":"1952-08-31T22:00:00.000Z"}
+]

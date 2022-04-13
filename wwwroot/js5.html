@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>HTML5 JavaScript API</title>
+        <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href="/styles/demostyles.css" rel="stylesheet">
+		<script type="text/javascript" src="/scripts/js5.js"></script>
+		<style>
+			#dropbox {
+				width: 20%;
+				height: 200px;
+				background: lightblue;
+				display: inline-block;
+			}
+			textarea{
+				height: 200px;
+				width: 70%;
+				margin-left: 10px;
+			}
+			
+			div#db p{
+				cursor: pointer;
+				border: 1px solid black;
+				border-radius: 5px;
+				display: inline-block;
+				padding: 3px;
+			}
+		</style>
+    </head>
+    <body onload="init()">
+		<div class="container">
+			<header>
+				<img src="images/demoicon.jpg" />
+				<h1>Demonstration</h1>
+			</header>
+			<main>
+				<div class="row">
+					<div class="col-md-4">
+						<canvas id="canvas" width="200" height="200" style="border: 1px solid black"></canvas>
+					</div>
+					<div class="col-md-4">
+						<p>Calculating pi <span id="piValue">xxx</span></p>
+					</div>
+					<div class="col-md-4">
+						<p id="ws">Web socket data</p>
+					</div>
+				</div>
+				<p>Please drag a textfile below:</p>
+				<div id="dropbox"></div>
+				<textarea id="filecontent"></textarea>
+				<hr />
+				<div id="db">
+					<h2>DB-operations</h2>
+					<p onclick="start();">Start on populate (or open)</p>
+					<p onclick="readOne();">Read one record from database</p>
+					<p onclick="readAll();">Read all records from database</p>
+					<p onclick="addMoreData();">Add more data to database</p>
+					<p onclick="stop();">Stop and close database</p>
+					<p onclick="deleteDB()">Delete db</p>
+					<div id="dbresult" style="border: 1px solid black"></div>
+				</div>
+			</main>
+			<footer>
+				Copyright (c) Kooditutorit Konsultointi Oy, 2016 
+				&#124; <a href="http://www.kooditutorit.fi">www.kooditutorit.fi</a>
+				&#124; <a href="mailto:info@kooditutorit.fi">info@kooditutorit.fi</a>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,153 @@
+/* Your own css here */
+
+.pageWrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 180px auto 200px;
+}
+
+/* Otsikossa kuva ja teksti vierekkäin */
+
+header{
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+/*
+header h1{
+    display:inline;
+    margin-left:10px;
+}
+*/
+
+/* Nav alueen linkit päällekkäin */
+
+nav a, nav span{
+    display:block;
+}
+
+/* bulletit */
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.heart{
+    background: url('/images/favourite.png') no-repeat left center;
+    height: 25px;
+    padding-top: 7px;
+    padding-left: 44px;
+}
+
+/* bannerit */
+
+aside section{
+    border:1px solid black;
+    margin: 0 0 10px 0;
+    padding:10px;
+    cursor: pointer;
+}
+
+aside section h3, aside section p{
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+aside section:nth-child(2){
+    border-radius: 5px;
+}
+
+aside section:nth-child(3){
+    box-shadow: 5px 5px 10px black;
+}
+
+aside section:nth-child(4){
+    border-radius: 10px;
+    background-image: url('/images/demoicon.jpg');
+    
+}
+
+aside section:hover{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+/* Footerissa tekstit vierekkäin, copyright oikeaan reunaan */
+
+footer p{
+    display:inline-block;
+    width: 40%;
+}
+
+footer p:nth-child(2){
+    float: right;
+}
+
+/* blockquote */
+
+blockquote{
+    font-style: italic;
+    font-size: 14pt;
+}
+
+a {
+    text-decoration: none;
+    color: steelblue;
+}
+
+a.hover {
+    background-color: slategrey;
+}
+
+@media (max-width: 600px){
+    aside{
+        display:none;
+    }
+
+    main{
+        display:block;
+    }
+
+    nav{
+        border-bottom: 1px solid #202060;
+        margin-bottom: 20px;
+    }
+
+    header{
+        margin-bottom: 0;
+    }
+
+   header h1{
+       font-size: 14pt;
+   }
+
+   header img{
+       width: 50%;
+       height:60%;
+   }
+    
+    nav > a{
+        display:inline;
+        margin-right: 20px;
+    }
+
+    nav span{
+        display:none;
+    }
+}
+
+@media print{
+    nav, aside{
+        display:none;
+    }
+
+    main{
+        display:grid;
+    }
+}

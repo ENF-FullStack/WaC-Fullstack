@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">  
+<head>
+    <meta charset="utf-8" />
+    <title>Book application</title>
+    <link rel="shortcut icon" href="images/bookicon.jpg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	<link href="/styles/books.sample.css" rel="stylesheet">
+    <script src="/libs/jquery.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/scripts/books.sample.js"></script>
+</head>
+<body>  
+	<div class="container">
+		<header class="row">
+            <div class="col-md-2">
+                <img src="/images/books.gif" />
+            </div>
+			<h1 class="col-md-10">Book application</h1>
+		</header>
+		<main>
+		  <form class="container" id="myform" >
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="title">Title</label>
+						<input class="form-control" type="text" id="title" name="title"/>
+					</div>
+					<div class="form-group">
+						<label for="author">Author</label>
+						<input class="form-control" type="text" id="author" name="author"/>
+					</div>
+					<div class="form-group">
+						<label id="test" for="description">Description</label>
+						<textarea class="form-control" id="description" name="description"></textarea>
+					</div>
+                </div>
+                <div class="col-md-6">
+                    <select id="books" class="form-control" size="10" >
+                        <option>Hobbit, Tolkien</option>
+                        <option>player Piano, Vonnegut</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons row" style="margin-top: 10px">
+                <div class="col-md-6" style="text-align: center;">
+                    <input id="submit" class="btn btn-primary" type="button" value="Save"/>
+                    <input type="button" class="btn btn-secondary" type="button" value="Cancel" />
+                </div>
+                <div class="col-md-6" style="text-align: center;">
+                    <input class="btn btn-secondary" type="button" value="New" />
+                    <input class="btn btn-secondary" type="button" value="Delete" />
+                </div>
+            </div>
+		  </form>
+		</main>
+		<footer class="row small">
+            <p class="col-md-6">Copyright (c) Kooditutorit Konsultointi Oy, 2021</p>
+			<a class="col-md-3" href="http://www.kooditutorit.fi">www.kooditutorit.fi</a>
+			<a class="col-md-3 text-right" href="mailto:info@kooditutorit.fi">info@kooditutorit.fi</a>
+		</footer>
+	</div>
+</body>
+</html> 

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Start-page</title>
+        <meta charset="utf-8" />
+    </head>
+	<style>
+			header,main,footer{display:block; width: 960px; margin: 0 auto 0 auto;}
+			header{
+				height: 86px;
+				border-bottom: 1px solid #a0b0f0;
+			}
+			header img { display: inline-block; margin-top: 10px;}
+			header h1 { 
+				display: inline-block; 
+				margin: 0 0 0 20px; 
+				padding:0; 
+				height: 86px;
+				vertical-align: middle;
+			}
+			footer{
+				display:block;
+				background-color:#f0f0f0;
+				padding: 10px;
+				font-size: 8pt;
+				text-align: center;
+            }
+
+            .popupContainer{
+                background-color: #a0a0a080;
+                position:fixed;
+                top: 0;
+                left:0;
+                bottom:0;
+                right:0;
+            }
+
+            .popup{
+                border: 1px double black ;
+                padding: 20px;
+                text-align: center;
+                width: 320px;
+                height: 80px;
+
+                background-color:white;
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                margin-left:-160px;
+                margin-top:-40px;
+            }
+
+            .hidden{
+                display:none;
+            }
+
+            .options{
+                cursor: pointer;
+                position: relative;
+            }
+
+            .options > div{
+                display:none;
+                border: 1px solid black;
+                width: 150px;
+                position: absolute;
+                background-color: white;
+            }
+
+            .options:hover > div {
+                display:block;
+            }
+
+            .options a{
+                display:block;
+            }
+
+            div#mainMenu ul {list-style: none;padding: 0px;margin: 0px;}
+            div#mainMenu ul li {display: block;position: relative;float: left;border:1px solid #000}
+            div#mainMenu li ul {display: none;}
+            div#mainMenu ul li a {display: block;background: #000;padding: 5px 10px 5px 10px;text-decoration: none;
+                        white-space: nowrap;color: #fff;}
+            div#mainMenu ul li a:hover {background: #f00;}
+            div#mainMenu li:hover ul {display: block; position: absolute;}
+            div#mainMenu li:hover li {float: none;}
+            div#mainMenu li:hover a {background: #f00;}
+            div#mainMenu li:hover li a:hover {background: #000;}
+            div#mainMenu ul li ul li {border-top: 0px;}		
+
+
+        table{
+            width: 60%;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }    
+
+        th {
+            text-align: left;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: #e0e0e0;
+        }
+
+        thead tr th{
+            border-bottom: 1px solid black;
+        }
+
+        .roundedInput{
+            border-radius: 5px;
+            outline:none;
+            border: 1px solid #a0a0a0;
+        }
+
+        .bottomInput{
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+
+        .searchInput{
+            background-image: url(/images/search.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 10px 10px;
+            border: 1px solid #a0a0a0;
+            outline:none;
+        }
+
+        .transitions input{
+            margin-left:40px;
+            transition: all linear 3s;
+        }
+
+        .transitions:hover input{
+            margin-left: 200px;
+        }
+    </style>
+    <script>
+        /*  We need some script for the popup to work properly.
+            See bottom of the page.
+        */
+       function hide(){
+           document.getElementById("popupContainer").classList.add("hidden");
+       }
+
+       function show(){
+           document.getElementById("popupContainer").classList.remove("hidden");
+       }
+
+    </script>
+    <body>
+		<header>
+			<img src="images/task-icon.png" />
+			<h1>Using styles</h1>
+		</header>
+		<main>
+			<h2>Step 1, css tricks 1</h2>
+			<p>Make the Options menu below appear so that only the "Options" text is 
+			initially visible but when the user moves the mouse on that text the actual
+            options appear as links to somewhere else.</p>
+            <div class="options">Options
+                <div>
+                    <a href="">Account</a>
+                    <a href="">Preferences</a>
+                    <a href="">Orders</a>
+                    <a href="">Balance</a>
+                </div>
+            </div>
+			<h2>Step 2, pull down menu</h2>
+            <p>Study the given css:</p>
+            <div id="mainMenu">
+                <ul>
+                    <li><a href="">Eka</a>
+                        <ul>
+                            <li><a href="">Valinta</a></li>
+                            <li><a href="">Valinta 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Toka</a>
+                        <ul>
+                            <li><a href="">Valinta</a></li>
+                            <li><a href="">Valinta 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Kolmas</a>
+                        <ul>
+                            <li><a href="">Valinta</a></li>
+                            <li><a href="">Valinta 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+			<pre>
+				div#mainMenu ul {list-style: none;padding: 0px;margin: 0px;}
+				div#mainMenu ul li {display: block;position: relative;float: left;border:1px solid #000}
+				div#mainMenu li ul {display: none;}
+				div#mainMenu ul li a {display: block;background: #000;padding: 5px 10px 5px 10px;text-decoration: none;
+						 white-space: nowrap;color: #fff;}
+				div#mainMenu ul li a:hover {background: #f00;}
+				div#mainMenu li:hover ul {display: block; position: absolute;}
+				div#mainMenu li:hover li {float: none;}
+				div#mainMenu li:hover a {background: #f00;}
+				div#mainMenu li:hover li a:hover {background: #000;}
+				div#mainMenu ul li ul li {border-top: 0px;}		
+			</pre>
+			<p>Figure out how to implement a main-menu for this page. Menu should appear something like this:</p>
+			<pre>
+				Maintain		Reporting		User
+				  Persons		  Sales			  Change password
+				  Companies		  Forecast		  Preferences
+			</pre>
+			<h2>Step 3, Table</h2>
+			<p>Make the following table look nice</p>
+			<table>
+                <thead>
+                    <tr><th>Name</th><th>Email</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>John</td><td>john@test.net</td></tr>
+                    <tr><td>Mike</td><td>mike@sales.com</td></tr>
+                    <tr><td>Alice</td><td>alice@wonderland.fi</td></tr>
+                </tbody>
+			</table>
+            <p>Alternate backgrounds, change fonts, text alignment, borders, box shadow etc</p>
+        	<h2>Step 4, Transition</h2>
+			<p>The options-menu from the step 1. Try to make it appear gradually in 2 seconds
+            when mouse is moved on top of Options-term.</p>
+            <div class="transitions">
+                <input type="button" value="Click me" />
+            </div>
+            <h2>Step 5, Some inputs</h2>
+            <div>
+                <p>This input field should have rounded borders. Also test the field when it has focus.</p>
+                <input class="roundedInput" />
+            </div>
+            <div>
+                <p>This input field should have only bottom border. Emphasize it somehow when
+                    the field has focus.</p>
+                <input class="bottomInput"  placeholder="Anna nimi"/>
+            </div>
+            <div>
+                <p>This is a search field, show images/search.png on the backround (right aligned)</p>
+                <input class="searchInput" />
+            </div>
+            <h2>Step 6, Popup</h2>
+            <p onclick="show()" style="cursor:pointer">Clicking this paragraph shows a popup,
+            which is hidden by pressing the button on popup. 
+            Currently the popup appears at the bottom of the page.</p>
+            <p>Make the popup appear on the center of the page with the rest of the contents 
+                of the page blurred.</p>
+            <h2>Step 7,Responsiveness</h2>
+            <div class="responsiveInputs">
+                <p>How would you make the table above responsive? On a narrow screen the name and email should
+                    be displayed on top of each other
+                </p>
+                <p>On wide screen the labels and inputs should appear side by side (with labels having a specific width), on narrow screen on top of each other.</p>
+                <div>
+                    <label>Name</label>
+                    <input />
+                </div>
+                <div>
+                    <label>Phone number</label>
+                    <input />
+                </div>
+            </div>
+        </main>
+        <div id="popupContainer" class="popupContainer hidden">
+            <div class="popup">
+                <p>Here is some info for the user</p>
+                <input type="button" onclick="hide()" value="Hide" />
+            </div>
+        </div>
+		<footer>Copyright (c) Codetutors Consulting Ltd</footer>
+	</body>
+</html>

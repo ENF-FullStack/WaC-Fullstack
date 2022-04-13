@@ -1,0 +1,28 @@
+/* Your own css here */
+/* Otsikossa kuva ja teksti vierekkäin */
+
+header{
+    border-bottom: 1px solid #a0a0a0;
+    margin-bottom: 20px;
+}
+
+footer{
+    border-top: 1px solid #a0a0a0;
+    margin-top: 20px;
+}
+
+#books{
+    margin-top: 32px;
+}
+
+/* Virheväritykset */
+
+#errorDiv p{
+    color:red;
+    margin:0;
+    padding:0;
+}
+
+.error{
+    color:red;
+}

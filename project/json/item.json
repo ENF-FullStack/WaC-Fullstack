@@ -1,0 +1,11 @@
+{
+    "id":1,
+    "charId":1,
+    "ilvl":72,
+    "name":"Death\'s Opus",
+    "baseItem":"Death Bow",
+    "iLvl":77,
+    "slot":"main",
+    "unique":true,
+    "ignored":true
+}

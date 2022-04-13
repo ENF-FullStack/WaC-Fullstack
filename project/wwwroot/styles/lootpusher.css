@@ -1,0 +1,38 @@
+/* Your own css here */
+
+.pageWrapper{
+    width: 80%;
+    background-color: rgb(226, 226, 226);
+    margin: 0 auto;
+}
+
+/* ei headeria ainakaan alustavasti, jätän kommentteihin 
+
+header{
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+header h1{
+    display:inline;
+    margin-left:20px;
+} */ 
+
+hr{
+    margin: auto 5%;
+}
+
+main{
+    display: inline;
+    /*grid-template-columns: 200px auto; */
+}
+
+/* footerissa hyvin vaalea sininen tausta, keskitetty teksti */
+
+footer {
+    display:grid;
+    padding-top: 1.2em;
+    font-size: 8pt;
+    text-align: center;
+    margin: 0 10% 0 10%;
+}

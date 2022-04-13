@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Start-page</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="styles/startbs.css" />
+        
+        <script src="/libs/jquery.js"></script>
+        <script src="/libs/bootstrap/dist/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div id="content" class="container">
+            <header class="row">
+                <div class="col-md-1">
+                    <img src="images/demoicon.jpg" />
+                </div>
+                <hgroup class="col-md-11">            
+                    <h1>HTML5 and CSS3</h1>
+                    <h2>Standards working together</h2>
+                </hgroup>
+            </header>
+            <div class="row">
+                <nav class="col-md-3">
+                    <a class="d-block" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN</a> 
+                    <a class="d-block" href="http://www.w3schools.com/html/html5_intro.asp">W3Schools</a>
+                </nav>
+                <main class="col-md-6">
+                    <article class="accordion" id="accordionExample">
+                        <section class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Bootstrap-page
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Add the required headers to make this a bootstrap -page</p>
+                                <p>The topmost div should have either class container or container-fluid.
+                                    Experiment with both.
+                                </p>
+                            </div>
+                          </div>
+                        </section>
+                        <section class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Laoyout
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Make nav, main and aside appear side-by-side as in start.html. You may also 
+                                    specify some styles to styles/startbs.css
+                                </p>
+                            </div>
+                          </div>
+                        </section>
+                        <section class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Table
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>Just a simple sample of html-table, use some bootstrap styles for it.</p>
+                                <table class="table">
+                                    <thead><tr><th>Product</th><th>Price</th></tr></thead>
+                                    <tfoot><tr><td>Sum</td><td>5,80€</td></tr></tfoot>
+                                    <tbody>
+                                        <tr><td>Cheese</td><td>3,50€</td></tr>
+                                        <tr><td>Butter</td><td>2,30€</td></tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                          </div>
+                        </section>
+                        <section class="card">
+                            <div class="card-header" id="headingFour">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  Accordion
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <p>Study the bootstrap components from getbootstrap.com. Figure out what needs to be
+                                    done to make the sections in this article appear as accordion.
+                                </p>
+                                <p>Accordion is a component that needs the bootstrap.js also.</p>
+                              </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Bootstrap layout
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <p>Experiment a little more with the layout of rows.</p>
+                            <h3>Display items below in three (equal) columns</h3>
+                            <div class="row">
+                                <div class="col-md-4 bordered">First</div>
+                                <div class="col-md-4 bordered">Second</div>
+                                <div class="col-md-4 bordered">Third</div>
+                            </div>
+                            <h3>Make the second column twice the width of other columns</h3>
+                            <div class="row">
+                                <div class="col-md-3 bordered">First</div>
+                                <div class="col-md-6 bordered">Second</div>
+                                <div class="col-md-3 bordered">Third</div>
+                            </div>
+                            <h3>Leave a gap (2 columns) between first and second column</h3>
+                            <div class="row">
+                                <div class="col-md-3 bordered">First</div>
+                                <div class="col-md-4 offset-md-2 bordered">Second</div>
+                                <div class="col-md-3 bordered">Third</div>
+                            </div>
+                            <h3>Change the order of columns to: second, first, third</h3>
+                            <div class="row">
+                                <div class="col-md-4 order-md-4 bordered">First</div>
+                                <div class="col-md-4 bordered">Second</div>
+                                <div class="col-md-4 order-md-8 bordered">Third</div>
+                            </div>
+                                </div>
+                        </div>
+                        </section>
+                        <section class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Forms
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                           b <div class="card-body">
+                            <p>Familiarize yourself on how form-fields should be presented with bootstrap.</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input class="form-control" id="name" />
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-2" for="email" >Email</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" id="email" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="submit" class="btn btn-primary mb-2" value="OK" />  
+                                </div>
+                            </form>
+                                </div>
+                        </div>
+                        </section>
+                    </article>
+                </main>
+                <aside class="col-md-3">
+                    <section>
+                        <h2>Bootstrap NOW!</h2>
+                        <p>Study bootstrap today for a special price!</p>
+                    </section>
+                    <section>
+                        <h2>Only today</h2>
+                        <p>Two for price of three....</p>
+                    </section>
+                </aside>
+            </div>
+            <footer class="row small">
+                <p class="col-md-6">
+                    Copyright (c) Kooditutorit Konsultointi Oy, 2016
+                </p>
+                <p class="col-md-3 text-center"> 
+                    <a href="http://www.kooditutorit.fi">www.kooditutorit.fi</a>
+                </p>
+                <p class="col-md-3 text-right">
+                    <a href="mailto:info@kooditutorit.fi">info@kooditutorit.fi</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

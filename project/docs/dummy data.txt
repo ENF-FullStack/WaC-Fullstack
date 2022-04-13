@@ -1,0 +1,124 @@
+
+Name: Appappaa
+Class: Ranger
+Ascension: Deadeye
+Level: 94
+
+Main hand: Death's Opus, U
+Offhand: Voidfletcher, U
+
+Helmet: Devoto's Devotion, U
+Body armour: Hyrri's Ire, U
+Boots: Windshriek, U
+Gloves: Oskarm, U
+Belt: Victory Lock, Stygian Vise
+
+Prefix 1: Recovering, T1, 11, Increased life flask recovery rate
+Prefix 2: -
+Prefix 3: -
+
+Suffix 1: of the Thunderhead, T5, 26, % to lightning resistance
+Suffix 2: of the Yeti, T5, 27, % to cold resistance
+Suffix 3: of the Furnace, T4, 35, % to fire resistance
+
+Amulet: Tempest Charm, Jade Amulet
+
+Prefix 1: Frozen, T4, 13-23, cold damage to attacks
+Prefix 2: - 
+Prefix 3: -
+
+Suffix 1: of Guatelizi, T0, 16.9-0.4, regenerate life per second-regenerate life per second
+Suffix 2: of the Universe, T3, 26, to all attributes
+Suffix 3: of the Magma, T2, 42, % to fire resistance
+
+Ring 1: The Taming, U
+Ring 2: Gloom Finger, Prismatic Ring
+
+Prefix 1: Chalybeous, T5, 56, to maximum mana
+Prefix 2: Virile, T1, 77, to maximum life
+Prefix 3: -
+
+Suffix 1: of the Flatworm, T5, 6.1, life per second
+Suffix 2: of the Walrus, T4, 35, % to cold resistance
+Suffix 3: of the Maelstrom, T3, 41, % to lightning resistance
+
+--
+
+Name: Yappappaa
+Class: Duelist
+Ascension: Champion
+Level: 88
+
+Main hand: The Wasp Nest, U
+Offhand: Bloodseeker, U
+
+Helmet: Abyssus, U
+Body armour: Agony Salvation, Astral Plate
+
+Prefix 1: Guatelizi, T0, 114-8, to maximum life-% increased maximum life
+Prefix 2: Armadillo's, T4, 21-10, % increased armour-% increased stun and block recovery
+Prefix 3: Lobstered, T6, 46, % increased armour
+
+Suffix 1: of the Kiln, T5, 27, % to fire resistance
+Suffix 2: -
+Suffix 3: -
+
+Boots: Hypnotic Tread, Goliath Greaves
+
+Prefix 1: Cheetah's, T2, 30, % increased movement speed
+Prefix 2: Stalwart, T6, 33, to maximum life
+Prefix 3: - 
+
+Suffix 1: of the Magma, T2, 43, % to fire resistance
+Suffix 2: of the Ice, T2, 42, % to cold resistance
+Suffix 3: -
+
+Gloves: Blood Fingers, Spiked Gloves
+
+Prefix 1: Essences, T0, 91, to maximum life
+Prefix 2: Burnished, T3, 3 to 4, physical damage to attacks
+Prefix 3: Smouldering, T3, 4 to 8, fire damage to attacks
+
+Suffix 1: of the Gods, T1, 54, to strenght
+Suffix 2: -
+Suffix 3: -
+
+Belt: Blight Twine, Stygian Vise
+
+Prefix 1: Stout, T6, 46, to maximum life
+Prefix 2: Studded, T7, 35, to armour
+Prefix 3: -
+
+Suffix 1: of the Essence, T0, 54, to intelligence
+Suffix 2: of Ryslatha, T1, 32.1, regenerate life per second
+Suffix 3: of the Cloud, T8, 8, % to lightning resistance
+
+Amulet: Tempest Choker, Onyx Amulet
+
+Prefix 1: Sapphire, T10, 32, to maximum mana
+Prefix 2: Agile, T7, 3, % to evasion rating
+Prefix 3: -
+
+Suffix 1: of the Tempest, T4, 31, % to lightning resistance
+Suffix 2: of the Volcano, T3, 37, % to fire resistance
+Suffix 3: of the Leviathan, T3, 40, to strength
+
+Ring 1: Agony Turn, Steel Ring
+
+Prefix 1: Virile, T1, 75, to maximum life
+Prefix 2: -
+Prefix 3: -
+
+Suffix 1: of the Inuit, T8, 8, % to cold resistance
+Suffix 2: of the Panther, T5, 29, to dexterity
+Suffix 3: of Variegation, T2, 14, % to all elemental resistances
+
+Ring 2: Phoenix Gyre, Steel Ring
+
+Prefix 1: Essences, T0, 10 to 16, physical damage to attacks
+Prefix 2: -
+Prefix 3: -
+
+Suffix 1: of the Ranger, T1, 390, to accuracy rating
+Suffix 2: of the Augur, T6, 24, to intelligence
+Suffix 3: of the Wind, T1, 55, to dexterity

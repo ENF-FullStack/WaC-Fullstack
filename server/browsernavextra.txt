@@ -1,0 +1,10 @@
+
+/*
+    Error handler for browser router
+*/
+
+const path = require('path')
+app.get('*', function (request, response){
+    response.sendFile(path.resolve(__dirname, webDir, 'index.html'))
+})
+

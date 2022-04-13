@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Start-page</title>
+	<meta charset="utf-8" />
+	<style>
+        header,main,footer{display:block; width: 960px; margin: 0 auto 0 auto;}
+        header{
+            height: 86px;
+            border-bottom: 1px solid #a0b0f0;
+        }
+        header img { display: inline-block; margin-top: 10px;}
+        header h1 { 
+            display: inline-block; 
+            margin: 0 0 0 20px; 
+            padding:0; 
+            height: 86px;
+            vertical-align: middle;
+        }
+        footer{
+            display:block;
+            background-color:#f0f0f0;
+            padding: 10px;
+            font-size: 8pt;
+            text-align: center;
+        }
+
+        label{
+            width: 120px;
+            display:inline-block;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<img src="images/task-icon.png" />
+			<h1>Form basics</h1>
+		</header>
+		<main>
+			<h2>Step 1, basic form</h2>		
+			<p>You already should have your node-based web server running. Follow your instructors
+			lead to make it accept form-data at url "/formdata"</p>
+			<p>Start by single input-field with name attribute set to something and a submit button to test the form.</p>
+			<p>Experiment with get and post methods</p>
+            <h2>Step 2, more form fields</h2>
+            <form novalidate method="post" action="/formdata">
+                <div>
+                    <label for="name">Nimi</label>
+                    <input id="name" name="name" placeholder="Syötä nimi" required />
+                </div>
+                <div>
+                    <label for="email">Spoisti</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+                <div>
+                    <label for="spaiva">Späivä</label>
+                    <input type="date" id="spaiva" name="spaiva" />
+                </div>
+                <div>
+                    <select size="4" name="valinta">
+                        <option value="1">Eka</option>
+                        <option value="2" selected>Toka</option>
+                        <option value="3">Kolmas</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="radio" name="radiot" value="ekaradio" />
+                    <input type="radio" name="radiot" value="tokaradio" />
+                    <input type="radio" name="radiot" value="kolmasradio" checked/>
+                </div>
+                <button><p>Hello<br>World</p></button>
+                <input type="button" value="Click" />
+                <input type="submit" value="OK" />
+            </form>
+			<p>Add some components to the form</p>
+			<ul>
+				<li>Input field for entering birthday</li>
+				<li>Input for email</li>
+				<li>Listbox (select-field) displaying few items which can be purchased</li>
+				<li>Radiobuttons for selecting item type (downloadable, hardcopy, or something like)</li>
+				<li>Input field for quantity of items</li>
+				<li>Text area for entering extra information</li>
+				<li>Combobox (select-field) for selecting payment method (Money transfer, credit card)</li>
+				<li>Checkbox "I agree to terms"</li>
+			</ul>
+			<h2>Step 3, Finalizing</h2>
+			<p>Specify labels for the controls</p>
+			<p>Use the autofocus, required and placeholder attributes</p>
+			<h2>Step 4, Extra</h2>
+			<p>Experiment with other input types. Try the datalist-feature. Remember to test with different browsers</p>
+		</main>
+		<footer>Copyright (c) Codetutors Consulting Ltd</footer>
+	</div>
+</body>
+</html>
